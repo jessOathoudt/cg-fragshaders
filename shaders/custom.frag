@@ -12,4 +12,8 @@ out vec4 FragColor;
 
 void main() {
     FragColor = texture(image, texcoord);
+    FragColor.x = 1.0 - FragColor.x;
+    FragColor.y = 1.0 - FragColor.y;
+    FragColor.z = 1.0 - FragColor.z;
+    FragColor.a = 1.0;
 }
